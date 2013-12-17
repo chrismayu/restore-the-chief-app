@@ -124,7 +124,7 @@ em { font-style: italic; font-weight:bold;}
 .topbox{
   background: url(image_path('side-view-b-w.jpg')) no-repeat center center fixed;
   width: 100%;
-  background-size: cover;
+  background-size:100% auto;
   -webkit-background-size: cover;
   min-height: 600px;
   text-align: center;
