@@ -20,7 +20,14 @@ body{
 
 
 h1{
-  display:none;
+ // display:none;
+}
+h1.sub-title{
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px black;
 }
 
 h2{
@@ -132,6 +139,20 @@ em { font-style: italic; font-weight:bold;}
   padding-top: 60px;
   padding-bottom: 30px;
 }
+.image-size-std {
+   
+  max-height: 400px;
+}
+
+.image-size-small {
+   
+  max-height: 200px;
+}
+
+.image-size-icon {
+   
+  max-height: 100px;
+}
 
 .cta-button{
   height: 60px;
@@ -219,6 +240,10 @@ em { font-style: italic; font-weight:bold;}
   /*color: #f40;*/
   font-size: 100%;
   font-weight: 800;
+}
+.white{
+  color: #fff;
+  
 }
 
 /* ****************** WHO IS THIS FOR? *************************** */
