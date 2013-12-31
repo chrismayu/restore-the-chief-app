@@ -1,13 +1,13 @@
-// import the CSS framework
-//@import "bootstrap";
-//@import "bootstrap-responsive";
+// import the CSS framework//
+
+ 
  
 body { padding-top: 85px; }
  
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans+Condensed:200,300');
 
-
+ 
 
 /*
 // Stylesheet for book landing page
@@ -17,6 +17,41 @@ body { padding-top: 85px; }
 body{
   color: #333;
 } 
+
+
+.bootstrap{
+ 
+	 @import "bootstrap";
+ 
+}
+
+
+.contact_text{
+ 
+  	font-family: 'Open Sans Bold',Arial,Helvetica,Sans-Serif;
+  	color:#5A5A59;
+      font-size:12pt;
+ 
+	 
+}
+
+.btn-custom {
+  background-color: hsl(27, 100%, 47%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fea256", endColorstr="#ef6b00");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#fea256), to(#ef6b00));
+  background-image: -moz-linear-gradient(top, #fea256, #ef6b00);
+  background-image: -ms-linear-gradient(top, #fea256, #ef6b00);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fea256), color-stop(100%, #ef6b00));
+  background-image: -webkit-linear-gradient(top, #fea256, #ef6b00);
+  background-image: -o-linear-gradient(top, #fea256, #ef6b00);
+  background-image: linear-gradient(#fea256, #ef6b00);
+  border-color: #ef6b00 #ef6b00 hsl(27, 100%, 42%);
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33);
+  -webkit-font-smoothing: antialiased;
+}
+
 
 
 h1{
@@ -127,7 +162,7 @@ em { font-style: italic; font-weight:bold;}
 
 
 /* *************************** TOP *************************** */
-
+ 
 .topbox{
   background: url(image_path('side-view-b-w.jpg')) no-repeat center center fixed;
   width: 100%;
@@ -329,6 +364,7 @@ img.rocket-icon{
 img.author-img{
   float: left;
   margin-right: 30px;
+  max-height: 200px;
 }
 #author .highlight{
   color: #333;

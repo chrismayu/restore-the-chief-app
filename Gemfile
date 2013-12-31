@@ -17,7 +17,7 @@ gem 'rolify'
 gem 'simple_form'
 gem 'thin'
 group :development do
-  gem 'better_errors'
+ 
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
   gem 'guard-bundler'
   gem 'guard-cucumber'
@@ -45,24 +45,17 @@ end
 gem 'client_side_validations'
 gem 'client_side_validations-simple_form'
 gem "heroku"
-gem "rmagick"
-gem "mini_magick"
-gem "carrierwave"
-gem 'carrierwave_direct'
-gem "bootstrap-switch-rails"
-gem 'country_select'
+ 
 gem 'jquery-ui-rails'
 gem "font-awesome-rails"
-gem 'will_paginate', '3.0.3'
-gem 'bootstrap-will_paginate', '0.0.6'
+ 
 gem 'roo'
 gem "letter_opener", :group => :development
 gem "strongbox"
 gem "nifty-generators", :group => :development
 gem 'validates_formatting_of'
 gem 'exception_notification' 
-gem 'prawn'
-gem 'money-rails'
+ 
 
 group :development, :test do
 

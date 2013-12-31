@@ -160,8 +160,9 @@
         <div id="author" class="content">
           <h2>About the Chris:</h2>
           <div class="author-info">
-            <img src="/images/kehoe-teaching.png" class="author-img" height="200px">
-            <span class="highlight">Chris Mailloux</span> is a skilled trademens who speacliazed in the electrical. Aqquired his Industrail Electrican trade in 2005, Specializeing in Robot & Computer Programming.   He is held positions as a General Manger at a local international Airshow for 2 years. 
+			  <%= image_tag("chris_harvard_small_med.jpg", :class=>"author-img author-img-size" )%> 
+
+            <span class="highlight">Chris Mailloux</span> is a Skilled Tradesman. He acquired his industrial electrician trade in 2005, Specializing in Robot & Computer Programming.   He is held positions as a General Manager of Ground Operations at a local International Airshow for 2 years.
           </div>
         </div>
 
@@ -255,11 +256,66 @@
               <h2 class="see-you-there"><a href="https://tutorials.railsapps.org/learn-ruby-on-rails" class="sign-up-link" id="membership"><img src="/images/buy-it-now.gif" alt="CLICK TO ORDER"></a></h2>
 
         </div>
+		  </div>  </div>
 
-        <div>
+ 
           <div id="testimonials" class="contact content">
-            Want more information? <a href="http://www.cloudflare.com/email-protection#9afefbf4f3fff6dafefbf4f3fff6f1fff2f5ffb4f9f5f7">email Daniel Kehoe</a>
+            Want more information?  <span class="highlight">email Chris Mailloux</span> 
+			 
+			
+			
+ <div id="contact" class="bootstrap">
+			 <%= simple_form_for @message, :html => { :class => 'form-horizontal  contact_text'} , :url => contact_path do |f| %>
+			 <table class="table table-striped">
+
+			   <tbody>
+			   	 <tr>	     
+			 	  <th>
+			 		<br>
+		 
+			 	  <%= f.input :name, :label=>"Name:", :placeholder=>"Your Name", :input_html => { :class => "enroll_input span5" } %>
+ 
+	 
+			 	<%= f.input :email,  :label=>"Email Address:",  :input_html => { :class => "enroll_input span4"}, :wrapper => :append do %>
+			 	  <%= f.input_field :email,   :placeholder=>"Your Email Address" %><span class="add-on"><i class="icon-envelope"></i></span>
+ 
+   <% end %>
+
+    
+
+			 	<%= f.input :subject,  :label=>'Subject:' , :placeholder=>"Your Question in Short form", :input_html => { :class => "enroll_input span5" } %>
+ 
+			 	<%= f.input :body, :label=>'Message:', :placeholder=>"Your Question", as: :text, :input_html => { :class => "input-xlarge span5", :rows => 10} %>
+
+ 
+			  <br>
+ 			 
+			 
+			 </tr>
+			 
+			 </table>
+  
+			 <div class="pull-center  ">
+			 	    <%= f.button :submit, 'Send Message', :class => 'btn btn-warning' %>
+		 
+	
+			 			    </div>
+ 
+			 <% end %>
+			</div>
+			
           </div>
         </div>
       </div>
 </div>
+
+ 
+
+
+
+	
+ 
+ 
+	
+
+ 

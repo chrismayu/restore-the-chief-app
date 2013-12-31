@@ -1,4 +1,7 @@
 <%# Rails flash messages styled for Bootstrap 2.3 %>
+
+<div class="bootstrap">
+
 <% flash.each do |name, msg| %>
   <% if msg.is_a?(String) %>
     <div class="alert alert-<%= name == :notice ? "success" : "error" %>">
@@ -7,3 +10,5 @@
     </div>
   <% end %>
 <% end %>
+
+</div>
