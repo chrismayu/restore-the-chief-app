@@ -539,3 +539,9 @@ h1 { margin-bottom:76px; padding:48px 0 22px; border-bottom:1px solid #e7e7e7; }
 .testimonial
  .quote.open { padding-right:2px; }
 
+
+ @media screen and (max-device-width: 1024px) {
+     #wrapper {
+         background-image: url('/path/to/smaller/background/image.png');
+     }
+ }
