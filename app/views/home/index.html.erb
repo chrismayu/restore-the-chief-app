@@ -1,11 +1,8 @@
 <div class="container">
       <div class="topbox">
-       
-                
+  
                 <%= image_tag("DSCI0710med.jpg", :class=>"image-size-std" )%>
-         
-                
-                 
+     
         <h2 class="hook content">  
           <span class="highlight">1946 Aeronca Chief 11BC</span> 
                   <br>
@@ -14,9 +11,9 @@
         </span></h2>
 
 
-        <div class="social-sharing">
+        <div   class="social-sharing">
           <div style="display:inline-block; vertical-align:text-bottom;">
-            <a class="twitter-share-button" data-count="horizontal" data-text="What do you think of the book 'Learn Ruby on Rails'?" data-url="<%= link_to root_path%>" data-via="rails_apps" data-related="rails_apps:Author of the book" href="http://twitter.com/share"></a>
+            <a class="twitter-share-button" data-count="horizontal" data-text="What do you think of the book 'Learn Ruby on Rails'?" data-url=" http://learn-rails.com/learn-ruby-on-rails.html" data-via="rails_apps" data-related="rails_apps:Author of the book" href="http://twitter.com/share"></a>
             <div class="g-plusone" data-annotation="bubble" data-href="http://learn-rails.com/learn-ruby-on-rails.html" data-size="medium" data-width="90"></div>
             <div class="fb-like" data-href="http://learn-rails.com/learn-ruby-on-rails.html" data-width="90" data-layout="button_count" data-show-faces="false" data-send="false"></div>
           </div>
@@ -25,7 +22,7 @@
     
       </div>
 
-      <div class="main-content-container">
+      <div id="project" class="main-content-container"   style="padding-top: 40px; margin-top: -40px;">
 
         <div class="subheading">
           <h2 class="hook content">
@@ -48,7 +45,9 @@
             </div>
           </div>
         </div>
-        <div id="who-for" class="content">
+	 
+		
+        <div id="plane"  class="content"  style="padding-top: 40px; margin-top: -40px;">
           <h2>
             The Airplane
           </h2>
@@ -81,7 +80,7 @@
 
             <div class="clear">
               <h2>
-                Pieces of the puzzle:
+                Pieces of the puzzle
               </h2>
             </div>
 
@@ -89,13 +88,13 @@
             <div class="benefit">
                <%= image_tag("DSCI0710med.jpg", :class=>"image-size-icon icon" )%>
               <h4>
-                Fuselage
+               Fuselage
               </h4>
             </div>
             <div class="benefit">
               <%= image_tag("DSCI0773med.jpg", :class=>"image-size-icon icon" )%>
               <h4>
-                                  Fuel Tank
+               Fuel Tank
               </h4>
             </div>
             <div class="benefit">
@@ -111,16 +110,16 @@
               </h4>
             </div>
 
-            <div class="clear sub-description">
+            <div  class="clear sub-description"  >
 
             </div>
           </div>
         </div>
 
         <div>
-          <div id="book-about" class="content narrow">
+          <div id="plan"  class="content narrow"  style="padding-top: 40px; margin-top: -40px;">
             <h2>
-              The Plan:
+              The Plan
             </h2>
             <h3>
               The Wing
@@ -138,7 +137,7 @@
               Cover with new fabric
             </p>
             <h3>
-              The Fuselage
+The Fuselage
             </h3>
            
              <p>
@@ -158,6 +157,8 @@
             </h3>
             <p>
             Send it out for recertification
+			<br>
+			<br>
             </p>
           </div>
         </div>
@@ -172,7 +173,7 @@
         </div>
 
         <div id="author" class="content">
-          <h2>About the Chris:</h2>
+          <h2>About Chris:</h2>
           <div class="author-info">
                           <%= image_tag("chris_harvard_small_med.jpg", :class=>"author-img author-img-size" )%> 
 
@@ -183,13 +184,14 @@
       
     
 
- 
-          <div id="testimonials" class="contact content">
+  <div id="contact" style="padding-top: 50px; margin-top: -50px;">
+  </div>
+          <div class="contact content" >
             Want more information?  <span class="highlight">email Chris Mailloux</span> 
                          
                         
                         
- <div id="contact" class="bootstrap">
+ <div  class="bootstrap">
                          <%= simple_form_for @message, :html => { :class => 'form-horizontal  contact_text'} , :url => contact_path do |f| %>
                          <table class="table table-striped">
 

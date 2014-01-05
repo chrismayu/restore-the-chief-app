@@ -2,7 +2,7 @@
 
  
  
-body { padding-top: 85px; }
+body { padding-top: 55px; }
  
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans+Condensed:200,300');
@@ -24,6 +24,9 @@ body{
 	 @import "bootstrap";
  
 }
+
+
+
 
 
 .contact_text{
@@ -106,13 +109,13 @@ em { font-style: italic; font-weight:bold;}
 /* *************************** NAVBAR *************************** */
 .navbar{
   position: fixed;
-  top: 0px;
-  /*height: 45px;*/
+  top: -10px;
+  height: 70px;
   width: 100%;
   background-color: rgba(0,0,0,.75);
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 300; 
 }
 .navbar ul{
   padding: 0px 10px;
@@ -121,7 +124,7 @@ em { font-style: italic; font-weight:bold;}
 .navbar li{
   display: inline-block;
   /*width: 10%;*/
-  padding: 10px 15px;
+  padding: 1px 18px;
   list-style: none;
 }
 .navbar a{
@@ -134,10 +137,14 @@ em { font-style: italic; font-weight:bold;}
 .navbar a.sign-up-link{
   color: #f60;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 32px;
   display: inline-block;
-  margin-top: -5px;
+  margin-top: 0px;
+
 }
+
+ 
+
 .navbar a.sign-up-link:hover{
   color: #f93;
 }
@@ -268,7 +275,7 @@ em { font-style: italic; font-weight:bold;}
   color: #333;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px 0px;
+  padding: 5px 0px;
 }
 
 .highlight{
@@ -316,7 +323,8 @@ em { font-style: italic; font-weight:bold;}
 /* *************************** BENEFITS ************************* */
 
 .benefits{
-  padding: 40px 0px;
+  padding: 10px 0px;
+ 
 }
 
 .clear{
