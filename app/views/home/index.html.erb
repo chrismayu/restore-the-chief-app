@@ -304,5 +304,23 @@
       </div>
 </div>
 
+
+
+<% if user_signed_in? %>
+  <li><%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %></li>
+<% else %>
+  <li><%= link_to 'Login', new_user_session_path %></li>
+<% end %>
+<% if user_signed_in? %>
+  <li><%= link_to 'Edit account', edit_user_registration_path %></li>
+<% else %>
+  
+<% end %>
+<% if user_signed_in? %>
+  <% if current_user.has_role? :admin %>
+    <li><%= link_to 'Admin', users_path %></li>
+  <% end %>
+<% end %>
+
  
  
