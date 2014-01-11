@@ -4,12 +4,17 @@
   <li><%= link_to 'The Plane', root_path + "#plane" %></li>
   
 
-  <li><%= link_to 'The Plan', root_path + "#plan" %></li>
-  
+   
+
+
+<li>   <%= link_to 'The Challenge', root_path + "#challenge" %></li>
+
+
+<li><%= link_to 'The Plan', root_path + "#plan" %></li>
 
   <li><%= link_to 'Contact', root_path + "#contact" %></li>
 
-
+ 
 <% if user_signed_in? %>
   <li><%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %></li>
 <% else %>

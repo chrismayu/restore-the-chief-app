@@ -15,6 +15,8 @@ chris_harvard_med.jpg: chris_harvard_med-816021b4cfdbc0048da89aea20515cfb.jpg
 chris_harvard_med/index.jpg: chris_harvard_med-816021b4cfdbc0048da89aea20515cfb.jpg
 chris_harvard_small_med.jpg: chris_harvard_small_med-c114441af9aaeb28ae94d9bcc012134a.jpg
 chris_harvard_small_med/index.jpg: chris_harvard_small_med-c114441af9aaeb28ae94d9bcc012134a.jpg
+kickstarter-logo-k-color.png: kickstarter-logo-k-color-5b81848771abf61c4a1d6842ec8609e9.png
+kickstarter-logo-k-color/index.png: kickstarter-logo-k-color-5b81848771abf61c4a1d6842ec8609e9.png
 o-200-d.jpg: o-200-d-ac8cafb2880f766825fcc19eea8c8439.jpg
 o-200-d/index.jpg: o-200-d-ac8cafb2880f766825fcc19eea8c8439.jpg
 piper_side.jpg: piper_side-0e2e45d1d05be91cf9af9640063c27f7.jpg
@@ -23,8 +25,8 @@ side-view-b-w.jpg: side-view-b-w-902ec69ba3357c25c588d4db672a9de3.jpg
 side-view-b-w/index.jpg: side-view-b-w-902ec69ba3357c25c588d4db672a9de3.jpg
 application.js: application-7a6719abbffe30b55343a366a69af5dd.js
 application/index.js: application-7a6719abbffe30b55343a366a69af5dd.js
-application.css: application-e0377af18a57b167e37f1fcf6c311c24.css
-application/index.css: application-e0377af18a57b167e37f1fcf6c311c24.css
+application.css: application-d3f498f38da67cc948de681b3011519c.css
+application/index.css: application-d3f498f38da67cc948de681b3011519c.css
 FontAwesome.otf: FontAwesome-1b753859c011e89c9cc8e29a6ee33956.otf
 FontAwesome/index.otf: FontAwesome-1b753859c011e89c9cc8e29a6ee33956.otf
 fontawesome-webfont.eot: fontawesome-webfont-e742c0f297e307a74bdf4ca3c19073a2.eot
