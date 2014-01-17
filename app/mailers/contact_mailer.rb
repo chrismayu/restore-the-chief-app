@@ -5,6 +5,6 @@ class ContactMailer < ActionMailer::Base
 
       def site_message(message)
         @message = message
-        mail(:subject => "Restore the Chief #{message.subject}")
+        mail(:subject => "R_t_C - #{message.subject}", :reply_to => message.email,)
       end
   end
