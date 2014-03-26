@@ -56,6 +56,8 @@ gem "nifty-generators", :group => :development
 gem 'validates_formatting_of'
 gem 'exception_notification' 
  
+gem 'redcarpet'
+gem 'rouge'
  
 
 group :development, :test do
