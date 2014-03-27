@@ -12,17 +12,24 @@
   </head>
   <body>
     <%# application layout styled for Bootstrap 2.3 %>
+	<div class="container">
     <header>
       <%= render 'layouts/navigation' %>
-  
-      
-	  
     </header>
- 
-	
+	  </div>
+ <div class="container">
+	<div class="mid-col">
+	 
+				
+			
+			<div class="mid-col-container">
               <%= render 'layouts/messages' %>
               <%= yield %>
-          
+			  
+		      </div>
+     </div>   
+			  
+     </div>     
           <footer>
           </footer>
     

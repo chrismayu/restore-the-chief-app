@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require 'jquery.backstretch'
+//= require fancybox
 //= require_tree . 

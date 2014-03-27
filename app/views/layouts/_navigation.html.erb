@@ -1,12 +1,56 @@
-<div class="navbar">
-   
-    
-       
-            <ul class="pull-left">
-              <li><%= link_to 'Restore the Chief', root_path,  :class=> "sign-up-link pull-left"  %><li>
-              <%= render 'layouts/navigation_links' %>
-            </ul>
-        
-    
+<div class="left-col" >
  
+<div class="left-side-bar" >	
+			<div class="intrude-less">
+			<header id="header" class="inner">
+			 <div class="pull-center">	
+				<div class="profilepic">	
+ <%= link_to image_tag("main_logo.jpg",:class=>'logo_image'  ), root_path, :class=>'logo_image'%>
+	
+</div>	
 </div>
+<h1><%= link_to 'Restore the Chief', root_path,  :class=> "sign-up-link" %></h1>
+<p class="subtitle">Rescuing A Piece our Heritage</p>
+<p class="description">The Restoration of 1343 - a Vintage 1946 Aeronca Chief 11BC.</p>
+<nav id="main-nav"><ul class="main">
+ 
+	 <%= render 'layouts/navigation_links' %>
+	 <% if user_signed_in? %>
+	   <li><%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %></li>
+	 <% else %>
+	   <li><%= link_to 'Login', new_user_session_path %></li>
+	 <% end %>
+	 <% if user_signed_in? %>
+	   <li><%= link_to 'Edit account', edit_user_registration_path %></li>
+	 <% else %>
+  
+	 <% end %>
+	 <% if user_signed_in? %>
+	   <% if current_user.has_role? :admin %>
+	     <li><%= link_to 'Admin', users_path %></li>
+	   <% end %>
+	 <% end %>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+ 
+		<a class="twitter" href="http://twitter.com/chrismayu" title="Twitter">Twitter</a>
+
+
+		<a class="facebook" href="http://www.facebook.com/restore.the.chief" title="Facebook">Facebook</a>
+
+
+
+		<a class="rss" href="/atom.xml" title="Feed">Feed</a>
+
+
+
+	</div>
+</nav>
+
+
+</div>
+</div>
+ </div>
+ 

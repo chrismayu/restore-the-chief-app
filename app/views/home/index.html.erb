@@ -1,13 +1,14 @@
-	<div class="ribbon-wrapper-green "><div class="ribbon-green"> <%= link_to 'View on KickStarter', "http://www.kickstarter.com/projects/2127375929/1603346063?token=02d81571" %></div></div>
+	<div class="ribbon-wrapper-green "><div class="ribbon-green"> <%= link_to 'View on KickStarter', "https://www.kickstarter.com/projects/2127375929/1473593155?token=e0e8941b" %></div></div>
 
+<div class="main_sheets">
+<div class="containers">
 
-<div class="container">
-
-  
-	
+ <div class="branding">
+Restore the Chief  
+	</div>
       <div class="topbox">
   
-                <%= image_tag("side_main_airplane.jpg", :class=>"image-size-std" )%>
+                <%= image_tag("side_main_airplane.jpg", :class=>"image-size-std push_down" )%>
      
         <h2 class="hook content">  
           <span class="highlight">1946 Aeronca Chief 11BC-1343</span> 
@@ -20,7 +21,7 @@
 
      
 
-      <div id="project" class="main-content-container"   style="padding-top: 40px; margin-top: -40px;">
+      <div id="project" class="main-content-container"   style=" padding-top: 15px; margin-top: -15px;">
 
         <div class="subheading">
           <h2 class="hook content">
@@ -37,13 +38,9 @@
           </h2>
 		  
 		  
-          <div class="darker">
-            <div class="pullquote content"> <span class="quote open">“</span>Without these piece of history - We may forgot where We came from.<span class="quote">”</span>  
-            </div>
-          </div>
+    
 		  
-		  
-          <div id="passion"  class="content "  style="padding-top: 40px; margin-top: -40px;">
+          <div id="passion"  class="content "  style=" padding-top: 15px; margin-top: -15px;">
             <h2>
               The Passion
             </h2>
@@ -75,7 +72,7 @@
 		
 	 
 		
-        <div id="plane"  class="content"  style="padding-top: 40px; margin-top: -40px;">
+        <div id="plane"  class="content"  style="padding-top: 15px; margin-top: -15px;">
           <h2>
             1343 - The Airplane
           </h2>
@@ -177,7 +174,7 @@
         </div>
 
         
-        <div id="challenge"  class="content  "  style="padding-top: 40px; margin-top: -40px;">
+        <div id="challenge"  class="contents"  style=" padding-top: 15px; margin-top: -15px;">
           <h2>
             The Challenge
           </h2>
@@ -193,7 +190,7 @@
       </div>
     
 		
-          <div id="plan"  class="content  "  style="padding-top: 40px; margin-top: -40px;">
+          <div id="plan"  class="contents order-for  "  style=" padding-top: 15px; margin-top: -15px;">
             <h2>
               The Plan
             </h2>
@@ -330,23 +327,9 @@
       </div>
 </div>
 
+</div>
 
 
-<% if user_signed_in? %>
-  <li><%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %></li>
-<% else %>
-  <li><%= link_to 'Login', new_user_session_path %></li>
-<% end %>
-<% if user_signed_in? %>
-  <li><%= link_to 'Edit account', edit_user_registration_path %></li>
-<% else %>
-  
-<% end %>
-<% if user_signed_in? %>
-  <% if current_user.has_role? :admin %>
-    <li><%= link_to 'Admin', users_path %></li>
-  <% end %>
-<% end %>
 
  
  

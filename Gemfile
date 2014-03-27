@@ -58,6 +58,8 @@ gem 'exception_notification'
  
 gem 'redcarpet'
 gem 'rouge'
+gem 'fancybox-rails'
+ 
  
 
 group :development, :test do
