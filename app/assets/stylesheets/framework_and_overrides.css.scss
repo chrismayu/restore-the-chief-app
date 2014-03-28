@@ -19,6 +19,13 @@ body{
   color: #379733;
 } 
 
+#footer {
+    padding: 18px 0;
+    border-top: 1px solid #fff;
+    text-align: center;
+    font-size: 0.9em
+}
+
 
 .bootstrap{
  
@@ -55,7 +62,18 @@ body{
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33);
   -webkit-font-smoothing: antialiased;
 }
-
+.btn-flat {
+  	font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+	border-radius:0px;
+  	border-width:0;
+  	background-image:none;
+  	padding:10px;
+  	margin:0 auto;
+  	margin-top:2px;
+  	//width:15%;
+    font-size:13pt;
+     
+}
 
 
 h1{
@@ -110,7 +128,10 @@ p{
   
 }
 
-em { font-style: italic; font-weight:bold;}
+em { font-style: italic; font-weight:bold;
+
+
+}
 
  
 
@@ -118,6 +139,9 @@ em { font-style: italic; font-weight:bold;}
  
 .darker{
   background-color: #e8e8e8;
+ 
+  padding-left: 25px;
+  padding-right: 25px; 
 }
 
 .hidden{
@@ -312,7 +336,7 @@ img.rocket-icon{
 
 #author{
   padding: 60px 0px 80px;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 200;
   line-height: 120%;
   margin-left: auto;
@@ -330,15 +354,92 @@ img.author-img{
 #author .highlight{
   color: #333;
 }
+ 
+
+#plans h2{
+  font-size: 60px;
+  font-weight: 400;
+ 
+  margin-bottom: 0px;
+  /*margin-top: 30px;*/
+}
+#plans h3{
+  margin-top: 20px;
+  font-size: 30px;
+ // text-align: center;
+  color: #666;
+}
+#plans ul{
+  
+  margin-bottom: 60px;
+  margin-top: 40px;
+  padding-left: 40px; 
+  font-size: 16px;
+	font-family: 'Open Sans Bold',Arial,Helvetica,Sans-Serif;
+	color:#5A5A59;
+}
+#plans  li{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  //line-height: 120%;
+  margin-bottom: 20px;
+  font-size: 16px;
+	font-family: 'Open Sans Bold',Arial,Helvetica,Sans-Serif;
+	color:#5A5A59;
+
+}
+
+ 
+#plane ul{
+ 
+  margin-bottom: 60px;
+  margin-top: 40px;
+   padding-left: 40px; 
+   font-size: 16px;
+ 	font-family: 'Open Sans Bold',Arial,Helvetica,Sans-Serif;
+ 	color:#5A5A59;
+}
+#plane  li{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 20px;
+  font-size: 16px;
+	font-family: 'Open Sans Bold',Arial,Helvetica,Sans-Serif;
+	color:#5A5A59;
+
+}
+
+
+/* ************************* SCHEDULE *************************** */
+
+#contents h3{
+  padding: 5px;
+}
+
+#contents{
+  padding: 40px 0px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 22px;
+}
+#contents ul{
+  color: #666;
+  list-style: none;
+  padding: 2px 0px 0px;
+}
+#contents li{
+  padding: 2px 20px 20px;
+}
 
 /* ********************** PULL QUOTES *************************** */
 
 .pullquote{
   padding: 40px 0px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 100;
   font-family: 'Open Sans Condensed', sans-serif;
   line-height: 135%;
+  text-align: center;
 }
 .pullquote-source{
   text-align: right;

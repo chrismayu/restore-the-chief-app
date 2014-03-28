@@ -124,9 +124,9 @@ Restore the Chief
 			
 			
           </ul>
-          <h3>
+          <h4>
             <em>Currently in disrepair beyond recognition.</em> &mdash; 1343 is a perfect candidate for restoration
-          </h3>
+          </h4>
           
                 
 				   <%= image_tag("rafters_fuse.jpg", :class=>"image-size-std  rocket-icon" )%>
@@ -190,7 +190,7 @@ Restore the Chief
       </div>
     
 		
-          <div id="plan"  class="contents order-for  "  style=" padding-top: 15px; margin-top: -15px;">
+          <div id="plans"  class="contents order-for  "  style=" padding-top: 15px; margin-top: -15px;">
             <h2>
               The Plan
             </h2>
@@ -200,7 +200,7 @@ Restore the Chief
             <h3>
               The Wing<br>
 			  <br>
-			  <%= image_tag("spars.jpg", :class=>"image-size-small" )%>
+			  <%= image_tag("spars.jpg", :class=>"image-size-std" )%>
             </h3>
             <ul>
              <li>
@@ -220,7 +220,7 @@ Restore the Chief
 				
             </h3>
 			<span class="rocket-icon">
-			<%= image_tag("bolts1.jpg", :class=>"image-size-small  " )%>    <%= image_tag("bolts2.jpg", :class=>"image-size-small " )%></span>
+			<%= image_tag("bolts1.jpg", :class=>"image-size-std  " )%><%= image_tag("bolts2.jpg", :class=>"image-size-std " )%></span>
             <ul>
               <li>
            
@@ -242,7 +242,7 @@ Restore the Chief
 			
             <h3>
               The Engine<br><br>
-			  <%= image_tag("engine2.jpg", :class=>"image-size-small   " )%>
+			  <%= image_tag("engine2.jpg", :class=>"image-size-std   " )%>
             </h3>
    	   
      <ul>
@@ -314,7 +314,7 @@ Restore the Chief
                          </table>
   
                          <div class="pull-center  ">
-                                     <%= f.button :submit, 'Send Message', :class => 'btn btn-warning' %>
+                                     <%= f.button :submit, 'Send Message', :class => 'btn btn-warning btn-flat ' %>
                  
         
                                                      </div>
@@ -324,12 +324,16 @@ Restore the Chief
                         
           </div>
         </div>
-      </div>
+      </div> 
+	  
+	  <%= render 'layouts/footer' %>
+	  
+	  
 </div>
 
 </div>
-
-
 
  
+
+  
  
