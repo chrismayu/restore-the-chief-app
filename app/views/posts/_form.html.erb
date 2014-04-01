@@ -1,14 +1,23 @@
+
+ <div  class="bootstrap">
 <%= simple_form_for(@post) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :title %>
-    <%= f.input :body %>
-    <%= f.input :published %>
-    <%= f.input :author_id %>
+ 
+	  <%= f.input :title,  :label=>'Title:' , :placeholder=>"The Title", :input_html => { :class => "enroll_input span5" } %>
+ 
+	 <%= f.input :body, :label=>'Message:', :placeholder=>"Post Content", as: :text, :input_html => { :class => "input-xlarge span7", :rows => 10} %>
+    <%= f.input :published, :label=>'Publish Now?:' %>
+  
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+ 
+    <%= f.button :submit, 'Create New Post', :class => 'btn btn-flat ' %>
+	
   </div>
 <% end %>
+
+
+</div>

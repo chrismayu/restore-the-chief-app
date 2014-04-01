@@ -17,7 +17,18 @@ a {
 a:hover {
     color: #7daf42
 }
-
+.btn-flat {
+  	font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+	border-radius:0px;
+  	border-width:0;
+  	background-image:none;
+  	padding:10px;
+  	margin:0 auto;
+  	margin-top:2px;
+  	//width:15%;
+    font-size:13pt;
+     
+}
 
 body {
    // font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
