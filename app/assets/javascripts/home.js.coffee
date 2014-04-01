@@ -21,3 +21,19 @@ $(document).ready ->
 
 $.backstretch "http://dl.dropbox.com/u/515046/www/garfield-interior.jpg"  
  
+
+$(document).ready ->
+  $(window).scroll ->
+    if $(this).scrollTop() > 100
+      $(".scrollup").fadeIn 500
+    else
+      $(".scrollup").fadeOut 300
+    return
+
+  $(".scrollup").click ->
+    $("html, body").animate
+      scrollTop: 0
+    , 500
+    false
+
+  return

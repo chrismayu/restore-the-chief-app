@@ -19,6 +19,34 @@ body{
   color: #379733;
 } 
 
+.scrollToTopIndicator{
+	cursor:pointer;
+	display:none;
+	position:fixed;
+	right:15px;
+	top:47%
+
+}
+
+
+
+.scrollup {
+    width: 42px;
+    height: 58px;
+    position: fixed;
+    bottom: 40%;
+    right: 4%;
+    display: none;
+	cursor:pointer;
+    //text-indent: -9999px;
+    background: url(image_path('scrollToTop.png')) no-repeat;
+    //background-color: #000;
+}
+
+
+@media only screen and (max-width:1024px){.scrollup{display:none!important}
+}
+
 #footer {
     padding: 18px 0;
     border-top: 1px solid #fff;
