@@ -4,4 +4,10 @@ class Post < ActiveRecord::Base
  
   
    default_scope order: 'posts.display_date DESC'
+   
+   def content
+      MarkdownService.new.render(body)
+    end
+   
+   
 end
