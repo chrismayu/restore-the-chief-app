@@ -1,5 +1,9 @@
+	
+          <% if @site_setup.kickstarter? %> 
 	<div class="ribbon-wrapper-green "><div class="ribbon-green"> <%= link_to 'View on KickStarter', "https://www.kickstarter.com/projects/2127375929/1473593155?token=e0e8941b" %></div></div>
-
+ <% end %>
+ 
+ 
 <div class="main_sheets">
 	<a href="#" class="scrollup"></a>
 <div class="containers">
@@ -9,7 +13,7 @@ Restore the Chief
 	</div>
       <div class="topbox">
   
-                <%= image_tag("side_main_airplane.jpg", :class=>"image-size-std push_down" )%>
+      <%= image_tag("side_main_airplane.jpg", :class=>"image-size-std push_down" )%>
      
         <h2 class="hook content">  
           <span class="highlight">1946 Aeronca Chief 11BC-1343</span> 
@@ -20,8 +24,12 @@ Restore the Chief
  
       </div>
 
-     
 
+
+
+ 
+<br>
+<br>
       <div id="project" class="main-content-container"   style=" padding-top: 15px; margin-top: -15px;">
 
         <div class="subheading">
@@ -39,7 +47,9 @@ Restore the Chief
           </h2>
 		  
 		  
-    
+     <%= render :partial => 'recent_posts' %>
+	 
+ 
 		  
           <div id="passion"  class="content "  style=" padding-top: 15px; margin-top: -15px;">
             <h2>

@@ -4,5 +4,15 @@ class ApplicationController < ActionController::Base
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to root_path, :alert => exception.message
   end
+  
+  before_filter :site
+  
+  
+  def site
+    
+     @site_setup = SiteSetup.last
+     
+  end
+  
 
 end

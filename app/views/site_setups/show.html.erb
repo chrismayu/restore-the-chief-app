@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Kickstarter:</b>
+  <%= @site_setup.kickstarter %>
+</p>
+
+<p>
+  <b>Site active:</b>
+  <%= @site_setup.site_active %>
+</p>
+
+<p>
+  <b>Blog active:</b>
+  <%= @site_setup.blog_active %>
+</p>
+
+
+<%= link_to 'Edit', edit_site_setup_path(@site_setup) %> |
+<%= link_to 'Back', site_setups_path %>

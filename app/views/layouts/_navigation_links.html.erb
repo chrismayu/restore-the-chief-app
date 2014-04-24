@@ -1,5 +1,12 @@
 <%# add navigation links to this file %>
- 
+
+
+	   <% if @site_setup.blog_active? %>
+	       <li><%= link_to 'The Blog', posts_path %></li>
+	   <% end %>
+
+
+   
   <li><%= link_to 'The Plane', root_path + "#plane" %></li>
   
 <li>   <%= link_to 'The Challenge', root_path + "#challenge" %></li>
@@ -7,5 +14,6 @@
 <li><%= link_to 'The Plan', root_path + "#plans" %></li>
 
   <li><%= link_to 'Contact', root_path + "#contact" %></li>
+ 
 
  

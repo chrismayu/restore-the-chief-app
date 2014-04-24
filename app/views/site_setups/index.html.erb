@@ -1,0 +1,27 @@
+<h1>Listing site_setups</h1>
+
+<table>
+  <tr>
+    <th>Kickstarter</th>
+    <th>Site active</th>
+    <th>Blog active</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @site_setups.each do |site_setup| %>
+  <tr>
+    <td><%= site_setup.kickstarter %></td>
+    <td><%= site_setup.site_active %></td>
+    <td><%= site_setup.blog_active %></td>
+    <td><%= link_to 'Show', site_setup %></td>
+    <td><%= link_to 'Edit', edit_site_setup_path(site_setup) %></td>
+    <td><%= link_to 'Destroy', site_setup, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Site setup', new_site_setup_path %>

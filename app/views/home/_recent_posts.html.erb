@@ -1,0 +1,64 @@
+	   <% if @site_setup.blog_active? %>
+	   
+	<!-- Start of Recent Post --> 
+	
+	
+	<div class="content">
+	<div class="featured">
+						 <div class="title">
+							 <h4>Recent Posts</h4>
+						 </div>
+						 
+						 </div> 
+						 
+	
+	 		 
+			<% @recent_post.each.with_index do |recent_posts, index| %>
+
+			 <!-- Start of loop -->
+			 <% if index == 0 %> 
+	 
+			 <!-- index 1 -->
+		     <div class="box three first">
+			<% end%>
+	
+			 <% if index == 1 %> 
+			 <!-- index 2 -->
+		     <div class="box three">
+			<% end%>
+
+
+			 <% if index == 2 %> 
+			 <!-- index 3 -->
+		     <div class="box three last">
+			<% end%>
+	
+		   		<div class="widget">
+						 <div class="featured">  
+							 <div class="recent_posts classic">
+								 <ul> <li class="date">
+										 <span class="day"><%= recent_posts.display_date.strftime("%d") %> </span>
+								 
+										 <%= recent_posts.display_date.strftime("%b") %>  
+									    </li>
+										 <li>
+											 <span class="title"> <%= link_to recent_posts.title , post_path(recent_posts)  %> </span>
+									 
+											 <%=h truncate(recent_posts.body, :length => 120) %> </li></ul> 
+
+			 				</div>	 
+		 			   </div>	 
+			 	  </div>	 
+	 
+			 </div>	
+		<!-- End of loop -->
+			<% end%>
+				
+    
+  
+			 
+     </div>   
+	 
+	<!-- end of  recent post --> 
+	 
+   <% end %>

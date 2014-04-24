@@ -1,6 +1,20 @@
 class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
+  
+  before_filter :blog_active
+  load_and_authorize_resource :except => [:index, :show ]
+  before_filter :authenticate_user!, :except => [:index, :show ]
+  
+  def blog_active
+    
+    unless @site_setup.blog_active?
+    redirect_to root_path 
+  end
+    
+  end
+  
+  
   def index
     @posts = Post.all
 

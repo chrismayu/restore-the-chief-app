@@ -1,4 +1,7 @@
 RestoreTheChiefApp::Application.routes.draw do
+  resources :site_setups
+
+
   resources :posts
 
 

@@ -1,29 +1,75 @@
-<h1>Listing posts</h1>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Body</th>
-    <th>Published</th>
-    <th>Author</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @posts.each do |post| %>
-  <tr>
-    <td><%= post.title %></td>
-    <td><%= post.body %></td>
-    <td><%= post.published %></td>
-    <td><%= post.author_id %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+<div class="main_sheets">
+	<div class="content">
+	
 
 <br />
 
-<%= link_to 'New Post', new_post_path %>
+
+	 <% if user_signed_in? %>
+	   <% if current_user.has_role? :admin %>
+	    <%= link_to 'New Post', new_post_path %>
+	   <% end %>
+	 <% end %>
+
+    
+
+<h1>Listing posts</h1>
+
+ 
+
+<% @posts.each do |post| %>
+ 
+ <!-- blog box-->
+ <div  class="post type-post status-publish format-standard box full"> 
+    <!-- blog box-->
+	<div class="box five first blog"> 
+		<div class="date nomargin">
+					<span class="day"> <%= post.display_date.strftime("%d") %> </span>
+					<span class="month"> <%= post.display_date.strftime("%b") %> </span>
+					<span class="year"> <%= post.display_date.strftime("%Y") %> </span>
+		</div>  
+	</div>
+ 
+    <div class="box four-five last blog blog_body">
+    
+		<!-- blog headline-->
+		<h2><%= link_to post.title , post_path(post)  %></h2>
+		<!-- / blog headline-->
+	 <!-- blog text-->
+			<p> <%=h truncate(post.body, :length => 310) %>   <%= link_to "    read more -->",  post,
+            { :class=>"read_more" }    %> </p> 
+		<!-- /blog text-->
+		
+
+   	 <% if user_signed_in? %>
+   	   <% if current_user.has_role? :admin %>
+    <%= link_to 'Edit', edit_post_path(post) %>  |
+
+    <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+   	   <% end %>
+   	 <% end %>
+		 
+    	</div>
+
+
+
+
+<div class="clear"></div>  
+</div>
+
+<div class="bold_line"></div>
+
+ 
+    
+   
+ 
+<% end %>
+ 
+
+
+
+</div>
+</div>
+
+
