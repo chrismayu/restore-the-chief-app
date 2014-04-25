@@ -59,7 +59,9 @@ gem 'exception_notification'
 gem 'redcarpet'
 gem 'rouge'
 gem 'fancybox-rails'
- 
+gem 'friendly_id', '4.0.10.1'   
+
+gem 'bitly'
  
 
 group :development, :test do

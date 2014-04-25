@@ -44,7 +44,7 @@
 										 <li>
 											 <span class="title"> <%= link_to recent_posts.title , post_path(recent_posts)  %> </span>
 									 
-											 <%=h truncate(recent_posts.content.html_safe, :length => 120) %> </li></ul> 
+											 <%=h truncate(recent_posts.body, :length => 120) %> </li></ul> 
 
 			 				</div>	 
 		 			   </div>	 

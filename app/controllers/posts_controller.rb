@@ -1,10 +1,22 @@
 class PostsController < ApplicationController
-  # GET /posts
-  # GET /posts.json
+
+
+  
   
   before_filter :blog_active
   load_and_authorize_resource :except => [:index, :show ]
   before_filter :authenticate_user!, :except => [:index, :show ]
+  
+  before_filter :find_blog, :only => [:show]
+  
+  def find_blog
+    @post = Post.find(params[:id])
+    if request.path != post_path(@post)
+      redirect_to @post, status: :moved_permanently
+     end
+    
+  end
+
   
   def blog_active
     

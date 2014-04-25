@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+ 
 <div class="main_sheets">
 	
 	<div class="containers">
@@ -57,10 +57,16 @@
 	   <% if current_user.has_role? :admin %>
 	 
 	
+shorten_url
 
 <p>
   <b>Published:</b>
   <%= @post.published %>
+</p>
+ 
+<p>
+  <b>Shorten Url:</b>
+  <%= @post.shorten_url %>
 </p>
  
 
