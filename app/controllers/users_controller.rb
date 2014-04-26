@@ -1,7 +1,9 @@
 class UsersController < ApplicationController
   before_filter :authenticate_user!, :except => [:show] 
   
-  
+  def sign_up
+    @message = Message.new
+  end
   
 
   def index

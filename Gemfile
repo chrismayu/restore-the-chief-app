@@ -62,6 +62,8 @@ gem 'fancybox-rails'
 gem 'friendly_id', '4.0.10.1'   
 
 gem 'bitly'
+
+gem "gibbon", "0.4.6"
  
 
 group :development, :test do

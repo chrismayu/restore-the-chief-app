@@ -32,26 +32,17 @@
 			<div class="space v_20"></div>	
 		
 			<div class="bold_line"></div>  
-			<div class="box full single">
-
-							
+			<div class="box full single"> 
 			
 				<!-- blog text-->
 				<p>
 					 <%= @post.content.html_safe %>
 					 </p>
- 
-
- 
- 
+  
 				<!-- /blog text-->
 			
-			</div>
-						 
-						 
-			<!-- / blog box -->
-
- 
+			</div> 
+			<!-- / blog box --> 
  
 	 <% if user_signed_in? %>
 	   <% if current_user.has_role? :admin %>
