@@ -19,10 +19,19 @@ class PostsController < ApplicationController
 
   
   def blog_active
-    
+    	  unless user_signed_in? 
+           
+   
     unless @site_setup.blog_active?
+    
+    
     redirect_to root_path 
-  end
+    
+    
+    end
+    
+       end
+    
     
   end
   
