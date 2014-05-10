@@ -37,7 +37,8 @@
 		<h2><%= link_to post.title , post_path(post)  %></h2>
 		<!-- / blog headline-->
 	 <!-- blog text-->
-			<p> <%=h truncate(post.body, :length => 310) %>   <%= link_to "    read more -->",  post,
+	 	  
+			<p> <%=h truncate(post.content.html_safe, :length => 310) %>   <%= link_to "    read more -->",  post,
             { :class=>"read_more" }    %> </p> 
 		<!-- /blog text-->
 		
