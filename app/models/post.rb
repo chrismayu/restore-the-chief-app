@@ -11,7 +11,7 @@ class Post < ActiveRecord::Base
    default_scope order: 'posts.display_date DESC'
    
    def content
-      MarkdownService.new.render(body)
+      MarkdownService.new.render(body).html_safe
     end
    
  
