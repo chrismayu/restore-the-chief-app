@@ -63,6 +63,7 @@ gem 'friendly_id', '4.0.10.1'
 
 gem 'bitly'
  
+gem 'truncate_html'
 
 group :development, :test do
 

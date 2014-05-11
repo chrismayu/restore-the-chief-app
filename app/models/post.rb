@@ -1,4 +1,4 @@
-class Post < ActiveRecord::Base
+class Post < ActiveRecord::Base 
   attr_accessible :author_id, :body, :published, :title, :display_date, :shorten_url
   
   extend FriendlyId
@@ -11,11 +11,10 @@ class Post < ActiveRecord::Base
    default_scope order: 'posts.display_date DESC'
    
    def content
-      MarkdownService.new.render(body).html_safe
+      MarkdownService.new.render(body).html_safe 
     end
    
  
-
       def move_friendly_id_error_to_name
         errors.add :title, *errors.delete(:friendly_id) if errors[:friendly_id].present?
       end
@@ -29,6 +28,5 @@ class Post < ActiveRecord::Base
  
       end
    
-   
-   
+ 
 end
