@@ -10,6 +10,11 @@ class Post < ActiveRecord::Base
   
    default_scope order: 'posts.display_date DESC'
    
+   unless current_user.has_role? :admin
+   default_scope where(:published => true)
+   end
+   
+   
    def content
       MarkdownService.new.render(body).html_safe 
     end
