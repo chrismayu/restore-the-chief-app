@@ -37,7 +37,15 @@ class PostsController < ApplicationController
   
   
   def index
-    @posts = Post.all
+   
+    
+     if current_user.admin != true
+       @posts = Post.all
+       
+     else
+       
+       @posts = Post.where("published = ?", true)
+    end
 
     respond_to do |format|
       format.html # index.html.erb
