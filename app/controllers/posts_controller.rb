@@ -32,6 +32,7 @@ class PostsController < ApplicationController
     @posts = Post.where(:published => true).select{|post| post.display_date.to_date >= DateTime.now}
     else
     @posts = Post.all
+    
     end
     
     respond_to do |format|
