@@ -15,6 +15,7 @@ class Post < ActiveRecord::Base
    
    
    
+
    def content
       MarkdownService.new.render(body).html_safe 
     end
