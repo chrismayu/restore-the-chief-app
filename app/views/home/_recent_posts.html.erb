@@ -1,5 +1,6 @@
 	   <% if @site_setup.blog_active? %>
-	   
+	  
+	   <% if @recent_post.count >= 2 %> 
 	<!-- Start of Recent Post --> 
 	
 	
@@ -62,3 +63,4 @@
 	<!-- end of  recent post --> 
 	 
    <% end %>
+      <% end %>
