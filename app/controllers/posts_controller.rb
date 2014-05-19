@@ -28,8 +28,10 @@ class PostsController < ApplicationController
   
   
   def index
+    
 	  unless user_signed_in? 
-    @posts = Post.where(:published => true).select{|post| post.display_date.to_date >= DateTime.now}
+   # @posts = Post.where(:published => true).select{|post| post.display_date.to_date >= DateTime.now}
+    @posts = Post.where(:published => true, :display_date => Date.today-500.year..Date.today)
     else
     @posts = Post.all
     
