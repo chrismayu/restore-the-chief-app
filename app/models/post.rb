@@ -9,6 +9,11 @@ class Post < ActiveRecord::Base
     after_create :create_bit_ly
   
    default_scope order: 'posts.display_date DESC'
+   #
+   #default_scope :conditions => ["published = ?",true] 
+   
+   
+   
    
    def content
       MarkdownService.new.render(body).html_safe 

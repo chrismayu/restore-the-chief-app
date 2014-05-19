@@ -19,26 +19,21 @@ class PostsController < ApplicationController
 
   
   def blog_active
-    	  unless user_signed_in? 
-           
-   
-    unless @site_setup.blog_active?
-    
-    
-    redirect_to root_path 
-    
-    
+    unless user_signed_in? 
+      unless @site_setup.blog_active?
+        redirect_to root_path 
+      end
     end
-    
-       end
-    
-    
   end
   
   
   def index
+	  unless user_signed_in? 
+    @posts = Post.where(:published => true).select{|post| post.display_date.to_date >= DateTime.now}
+    else
     @posts = Post.all
-
+    end
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @posts }
@@ -48,7 +43,10 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+ 
     @post = Post.find(params[:id])
+  
+ 
 
     respond_to do |format|
       format.html # show.html.erb
@@ -69,7 +67,9 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
-    @post = Post.find(params[:id])
+   @post = Post.find(params[:id])
+ 
+ 
   end
 
   # POST /posts
